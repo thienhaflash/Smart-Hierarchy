@@ -42,7 +42,7 @@ namespace AV.Hierarchy
                     
                     for (int i = roots.Length - 1; i >= 0; i--)
                     {
-                        roots[i].SetParent(null);
+                        roots[i].SetParent(transform.parent);
                         roots[i].SetSiblingIndex(siblings[i]);
                     }
                     
